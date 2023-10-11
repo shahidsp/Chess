@@ -1,0 +1,5 @@
+package Pieces;
+
+public enum PinCondition {
+    VERTICAL, HORIZONTAL, POSITIVE_DIAGONAL, NEGATIVE_DIAGONAL, NOT_PINNED
+}
