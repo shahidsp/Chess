@@ -169,8 +169,16 @@ public class Board {
         }
     }
 
+    public Square getSquare(Coordinate coordinate) {
+        return boardInstance.getBoard().get(coordinate.file()).get(coordinate.rank()).getPieceOnSquare().getSquare();
+    }
+
+    public Piece getPieceOnSquare(Coordinate coordinate) {
+        return getSquare(coordinate).getPieceOnSquare();
+    }
+
 
     public void clearBoard() {
-
+        board.clear();
     }
 }
