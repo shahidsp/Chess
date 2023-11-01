@@ -7,9 +7,9 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        Piece piece = null;
+        Board.getInstance().clearBoard();
 
-        System.out.println(piece.getType());
+
 
 
     }
